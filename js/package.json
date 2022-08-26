@@ -3,8 +3,8 @@
   "version": "0.1.4",
   "description": "Zstandard codec powered by Emscripten",
   "main": "index.js",
-  "repository": "https://github.com/yoshihitoh/zstd-codec",
-  "author": "yoshihitoh",
+  "repository": "https://github.com/liradb2000/zstd-codec-stream",
+  "author": "liradb2000",
   "license": "MIT",
   "scripts": {
     "build-binding": "bash ../update-zstd-binding.sh",
