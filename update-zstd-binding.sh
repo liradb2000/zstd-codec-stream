@@ -3,8 +3,8 @@
 set -e
 
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-CPP_DIR=$(greadlink -f ${ROOT_DIR}/cpp)
-JS_DIR=$(greadlink -f ${ROOT_DIR}/js)
+CPP_DIR=$(readlink -f ${ROOT_DIR}/cpp)
+JS_DIR=$(readlink -f ${ROOT_DIR}/js)
 
 CONTAINER_NAME="zstd-emscripten"
 IMAGE_NAME="yoshihitoh/zstd-emscripten"

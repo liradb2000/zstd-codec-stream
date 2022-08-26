@@ -213,12 +213,14 @@ project "zstd-codec-binding-wasm"
             "-s WASM=1",
             "-s SINGLE_FILE=1",
             "-s BINARYEN_ASYNC_COMPILATION=1",
+            "-s ALLOW_MEMORY_GROWTH=1",
         }
 
     filter {"options:with-emscripten", "configurations:Release"}
         linkoptions {
             "-O2",
             "-s USE_CLOSURE_COMPILER=1",
+            "-s ALLOW_MEMORY_GROWTH=1",
         }
 
     -- NOTE: don't know how to exclude this project on other platofrms.
