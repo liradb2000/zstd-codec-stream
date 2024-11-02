@@ -1,5 +1,5 @@
 {
-  "name": "zstd-codec",
+  "name": "@liradb2000/zstd-codec",
   "version": "0.1.4",
   "description": "Zstandard codec powered by Emscripten",
   "main": "index.js",
