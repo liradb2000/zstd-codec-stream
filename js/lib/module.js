@@ -12,8 +12,8 @@ const wasmSupported = (() => {
     return false;
 })();
 
-exports.run = (f) => {
-    const Module = {};
+exports.run = (f, opt={}) => {
+    const Module = opt;
     Module.onRuntimeInitialized = () => {
         f(Module);
     };

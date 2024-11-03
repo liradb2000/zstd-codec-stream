@@ -181,3 +181,9 @@ TODO: add an example for Node.js.
 - add how to test
 - performance test
 - add more tests
+
+
+
+
+## init script
+source ~/emsdk/emsdk_env.sh 

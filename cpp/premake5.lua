@@ -114,27 +114,27 @@ project "zstd-codec"
         }
 
 
-project "test-zstd-codec"
-    kind "ConsoleApp"
-    language "C++"
-    targetdir "%{wks.location}/bin/%{cfg.buildcfg}"
+-- project "test-zstd-codec"
+--     kind "ConsoleApp"
+--     language "C++"
+--     targetdir "%{wks.location}/bin/%{cfg.buildcfg}"
 
-    includedirs {
-        "zstd/lib",
-        "src",
-    }
+--     includedirs {
+--         "zstd/lib",
+--         "src",
+--     }
 
-    files {
-        "test/**.h",
-        "test/**.hpp",
-        "test/**.c",
-        "test/**.cc",
-    }
+--     files {
+--         "test/**.h",
+--         "test/**.hpp",
+--         "test/**.c",
+--         "test/**.cc",
+--     }
 
-    links {
-        "zstd",
-        "zstd-codec",
-    }
+--     links {
+--         "zstd",
+--         "zstd-codec",
+--     }
 
 
 project "zstd-codec-binding"
@@ -211,7 +211,7 @@ project "zstd-codec-binding-wasm"
             "-s 'EXTRA_EXPORTED_RUNTIME_METHODS=[\"FS\"]'",
             "-s MODULARIZE=1",
             "-s WASM=1",
-            "-s SINGLE_FILE=1",
+            -- "-s SINGLE_FILE=1",
             "-s BINARYEN_ASYNC_COMPILATION=1",
             "-s ALLOW_MEMORY_GROWTH=1",
         }

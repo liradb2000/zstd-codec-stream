@@ -355,9 +355,9 @@ const onReady = (binding) => {
     return zstd;
 };
 
-exports.run = (f) => {
+exports.run = (f, opt={}) => {
     return require('./module.js').run((binding) => {
         const zstd = onReady(binding);
         f(zstd);
-    });
+    },opt);
 };

@@ -108,9 +108,9 @@ const onReady = (binding) => {
     return streams;
 };
 
-exports.run = (f) => {
+exports.run = (f, opt={}) => {
     return require('./module.js').run((binding) => {
         const streams = onReady(binding);
         f(streams);
-    });
+    },opt);
 };
